@@ -36,6 +36,7 @@ The dataset contains simulated flight-level operational and financial data for a
 
 ## 🏗️ ETL Pipeline Architecture
 
+```
 RAW CSV DATA
 │
 ▼
@@ -43,12 +44,12 @@ EXTRACT (extract.py)
 │
 ▼
 TRANSFORM (transform.py)
+│
 ├── Data profiling
 ├── Missing value handling
 ├── Data validation rules
 ├── Route standardization checks
 ├── Geospatial distance computation
-├── Feature engineering
 └── KPI generation (RPK, ASK, RASK, CASK, Yield)
 │
 ▼
@@ -59,6 +60,7 @@ POSTGRESQL DATA WAREHOUSE
 │
 ▼
 FACT TABLE: fact_airline_flights
+```
 
 ---
 
